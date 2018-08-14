@@ -27,17 +27,17 @@ class Config(AppConfig):
 
 class ProductionConfig(Config):
 
-	SQLALCHEMY_DATABASE_URI = "mysql+pymysql://appseed:appseed@localhost/appseed-flask"
+	SQLALCHEMY_DATABASE_URI = "mysql+pymysql://appseed:appseed@localhost/appseedflask"
 
-	SERVER_NAME   = 'www.awesome.com' # <- your public domain here
+	SERVER_NAME   = '18.231.197.50' # <- your public domain here
 	DEBUG         = False
 	TESTING       = False
 
 class DevelopmentConfig(Config):
 
-	SQLALCHEMY_DATABASE_URI = "mysql+pymysql://appseed:appseed@localhost/appseed-flask"
+	SQLALCHEMY_DATABASE_URI = "mysql+pymysql://appseed:appseed@localhost/appseedflask"
 
-	SERVER_NAME   = 'localhost:5000'
+	SERVER_NAME   = '18.231.197.50:5000'
 	DEBUG	= False
 	TESTING	= False
 

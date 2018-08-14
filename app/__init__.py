@@ -12,9 +12,8 @@ from flask_pymongo    import PyMongo
 from flask_login      import LoginManager
 from flask_bcrypt     import Bcrypt
 from flask_mail       import Mail
+from .assets import Assets as assets
 
-# load RES
-from assets import Assets as assets 
 
 app = Flask(__name__, static_url_path='/static')
 

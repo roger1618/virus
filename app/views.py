@@ -11,10 +11,10 @@ from flask_login import login_user, logout_user, current_user, login_required
 from app         import app, lm, db, bc
 from sqlalchemy  import desc
 from flask_mail  import Message
-from models      import User
-from cli         import user_exists
+from .models      import User
+from .cli         import user_exists
 
-from forms import LoginForm, RegisterForm
+from .forms import LoginForm, RegisterForm
 import os
 import re
 
